@@ -1,13 +1,16 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    images: {
-        remotePatterns: [
-          {
-            protocol: "https",
-            hostname: "shikimori.one",
-          },
-        ],
+  env: {
+    API_URL: "https://shikimori.one/api/animes",
+  },
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "shikimori.one",
       },
+    ],
+  },
 };
 
 export default nextConfig;
